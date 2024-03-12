@@ -1,0 +1,395 @@
+package it.polito.po;
+
+public class Quiz {
+	final static public String[] questions = {
+	"Cosa puo' dimostrare un test?",
+	"In seguito a quale operazione SVN incrementa il numero di revision?",
+	"A cosa serve il diamond operator '<>' ?"
+	};
+	final static public String[][] options = {
+	{
+		"La correttezza del programma",
+		"La presenza di difetti nel programma",
+		"L'assenza di difetti nel programma",
+		"L'usabilita' del programma",
+		"La qualita' del programma"	},
+	{
+		"Delete",
+		"Commit",
+		"Add",
+		"Check-out",
+		"Update"	},
+	{
+		"A indicare una co-varianza di tipo",
+		"A indicare uno scambio di valori atomico",
+		"A confrontare due valori differenti",
+		"A indicare un'inferenza di tipo per una classe generica",
+		"A indicare una riferimento ad un metodo"	}
+	};
+	
+	/**
+	 * Return the index of the right answer(s) for the given question 
+	 */
+	public static int[] answer(int question){
+		// TODO: answer the question
+		
+		switch(question){
+			case 0: return new int[]{1}; // replace with your answers
+			case 1: return new int[]{1}; // replace with your answers
+			case 2: return new int[]{3}; // replace with your answers
+		}
+		return null; // means: "No answer"
+	}
+
+	/**
+	 * When executed will show the answers you selected
+	 */
+	public static void main(String[] args){
+		for(int q=0; q<questions.length; ++q){
+			System.out.println("Question: " + questions[q]);
+			int[] a = answer(q);
+			if(a==null || a.length==0){
+				System.out.println("<undefined>");
+				continue;
+			}
+			System.out.println("Answer" + (a.length>1?"s":"") + ":" );
+			for(int i=0; i<a.length; ++i){
+				System.out.println(a[i] + " - " + options[q][a[i]]);
+			}
+		}
+	}
+}
+
+
+
+---------------------------------------------------------------------------
+
+
+
+package it.polito.po;
+
+public class Quiz {
+	final static public String[] questions = {
+	"Cosa si trova nella sezione inferiore di una classe UML? / What is specified in the bottom section of a UML class?",
+	"Che operazione crea una copia locale di un repository SVN? What operation makes a local copy of an SVN repository?",
+	"Cosa puo' dimostrare un test?"
+	};
+	final static public String[][] options = {
+	{
+		"Lista degli attributi / List of attributes",
+		"Dettagli implementativi / Implementation details",
+		"Lista dei metodi / List of methods",
+		"Nome della classe / Name of the class",
+		"Lista dei metodi statici / List of static methods"	},
+	{
+		"Check-out",
+		"Lock",
+		"Unlock",
+		"Update",
+		"Merge"	},
+	{
+		"La correttezza del programma",
+		"La qualita' del programma",
+		"La presenza di difetti nel programma",
+		"La manutenibilita' del programma",
+		"L'assenza di difetti nel programma"	}
+	};
+	
+	/**
+	 * Return the index of the right answer(s) for the given question 
+	 */
+	public static int[] answer(int question){
+		// TODO: answer the question
+		
+		switch(question){
+			case 0: return new int[]{2}; // replace with your answers
+			case 1: return new int[]{0}; // replace with your answers
+			case 2: return new int[]{2}; // replace with your answers
+		}
+		return null; // means: "No answer"
+	}
+
+	/**
+	 * When executed will show the answers you selected
+	 */
+	public static void main(String[] args){
+		for(int q=0; q<questions.length; ++q){
+			System.out.println("Question: " + questions[q]);
+			int[] a = answer(q);
+			if(a==null || a.length==0){
+				System.out.println("<undefined>");
+				continue;
+			}
+			System.out.println("Answer" + (a.length>1?"s":"") + ":" );
+			for(int i=0; i<a.length; ++i){
+				System.out.println(a[i] + " - " + options[q][a[i]]);
+			}
+		}
+	}
+}
+
+
+-----------------------------------------------------------------------------
+
+
+package it.polito.po;
+
+public class Quiz {
+	final static public String[] questions = {
+	"Quali di queste affermazioni sono valide per un'interfaccia Java? / Which among the following statements are correct for a Java interface?",
+	"Cosa contiene la sezione centrale di una classe UML? / What is present in the middle section of a UML class?",
+	"Che metodo usa SVN per risolvere conflitti? / What methods does SVN adopts to resolve conflics?"
+	};
+	final static public String[][] options = {
+	{
+		"Un'interfaccia puo' contenere dei metodi astratti / An interface can contain abstract methods",
+		"null",
+		"Un'interfaccia puo' essere vuota / An interface can be empty",
+		"Un'interfaccia puo' contenere dei metodi statici / An interface can contain static methods",
+		"Un'interfaccia non puo' contenere dei metodi statici / An interface cannot contain static methods"	},
+	{
+		"Implementazione / Implementation",
+		"Nome del package / Name of the package",
+		"Attributi / Attributes",
+		"Nome della classe / Name of the class",
+		"Interfacce / Interfaces"	},
+	{
+		"Check-in/Check-out",
+		"Lock-Unlock-Modify",
+		"Check-out/Check-in",
+		"Lock-Modify-Unlock",
+		"Copy-Modify-Merge"	}
+	};
+	
+	/**
+	 * Return the index of the right answer(s) for the given question 
+	 */
+	public static int[] answer(int question){
+		// TODO: answer the question
+		
+		switch(question){
+			case 0: return new int[]{0,2,3}; // replace with your answers
+			case 1: return new int[]{2}; // replace with your answers
+			case 2: return new int[]{4}; // replace with your answers
+		}
+		return null; // means: "No answer"
+	}
+
+	/**
+	 * When executed will show the answers you selected
+	 */
+	public static void main(String[] args){
+		for(int q=0; q<questions.length; ++q){
+			System.out.println("Question: " + questions[q]);
+			int[] a = answer(q);
+			if(a==null || a.length==0){
+				System.out.println("<undefined>");
+				continue;
+			}
+			System.out.println("Answer" + (a.length>1?"s":"") + ":" );
+			for(int i=0; i<a.length; ++i){
+				System.out.println(a[i] + " - " + options[q][a[i]]);
+			}
+		}
+	}
+}
+
+
+----------------------------------------------------------------------------
+
+
+package it.polito.po;
+
+public class Quiz {
+	final static public String[] questions = {
+	"Che metodo usa SVN per risolvere conflitti?",
+	"Cosa contiene la sezione centrale di una classe UML?",
+	"Qual'e' la differenza tra verifica e convalida?"
+	};
+	final static public String[][] options = {
+	{
+		"Check-in/Check-out",
+		"Copy-Modify-Merge",
+		"Check-out/Check-in",
+		"Modify-Commit-Unlock",
+		"Check-out/Commit"	},
+	{
+		"Nome della classe",
+		"Attributi statici",
+		"Attributi",
+		"Nome del package",
+		"Implementazione"	},
+	{
+		"Una riguarda il test, l'altra le ispezioni",
+		"Sono sinonimi, non c'e' differenza",
+		"Una determina la qualita' l'altra l'utilita' del sistema",
+		"Una riguarda il test, l'altra no",
+		// "Una riguarda il test, l'altra le ispezioni"	}
+	};
+	
+	/**
+	 * Return the index of the right answer(s) for the given question 
+	 */
+	public static int[] answer(int question){
+		// TODO: answer the question
+
+		switch(question){
+			case 0: return new int[] {1}; // replace with your answers
+			case 1: return new int[] {2}; // replace with your answers
+			case 2: return new int[] {2}; // replace with your answers
+		}
+		return null; // means: "No answer"
+	}
+
+	/**
+	 * When executed will show the answers you selected
+	 */
+	public static void main(String[] args){
+		for(int q=0; q<questions.length; ++q){
+			System.out.println("Question: " + questions[q]);
+			int[] a = answer(q);
+			if(a==null || a.length==0){
+				System.out.println("<undefined>");
+				continue;
+			}
+			System.out.println("Answer" + (a.length>1?"s":"") + ":" );
+			for(int i=0; i<a.length; ++i){
+				System.out.println(a[i] + " - " + options[q][a[i]]);
+			}
+		}
+	}
+}
+
+
+----------------------------------------------------------------------------
+
+
+package it.polito.po;
+
+public class Quiz {
+	final static public String[] questions = {
+	"Cosa puo' dimostrare un test?",
+	"In seguito a quale operazione SVN incrementa il numero di revision?",
+	"Per quali caratteristiche sono adatti i metodi agili?"
+	};
+	final static public String[][] options = {
+	{
+		"L'assenza di difetti nel programma",
+		"La presenza di difetti nel programma",
+		"L'usabilita' del programma",
+		"La manutenibilita' del programma",
+		"La correttezza del programma"	},
+	{
+		"Lock",
+		"Add",
+		"Commit",
+		"Merge",
+		"Delete"	},
+	{
+		"La stabilita' del design",
+		"L'affidabilita' del software",
+		"La variabilita' dei requisiti",
+		"La facilita' di test",
+		"I tempi di sviluppo"	}
+	};
+	
+	/**
+	 * Return the index of the right answer(s) for the given question 
+	 */
+	public static int[] answer(int question){
+		
+		switch(question){
+			case 0: return new int[] {1}; // replace with your answers
+			case 1: return new int[] {2}; // replace with your answers
+			case 2: return new int[] {2,4}; // replace with your answers
+		}
+		return null; // means: "No answer"
+	}
+
+	/**
+	 * When executed will show the answers you selected
+	 */
+	public static void main(String[] args){
+		for(int q=0; q<questions.length; ++q){
+			System.out.println("Question: " + questions[q]);
+			int[] a = answer(q);
+			if(a==null || a.length==0){
+				System.out.println("<undefined>");
+				continue;
+			}
+			System.out.println("Answer" + (a.length>1?"s":"") + ":" );
+			for(int i=0; i<a.length; ++i){
+				System.out.println(a[i] + " - " + options[q][a[i]]);
+			}
+		}
+	}
+}
+
+-------------------------------------------------------------------------
+
+
+package it.polito.po;
+
+public class Quiz {
+	final static public String[] questions = {
+			"Quali di queste affermazioni sono valide? / Which among the following statements are correct?",
+			"Quali afferamzioni sono vere per la sezione superiore di una classe UML? / Which statements are true for the upper section of a UML class?",
+			"Quali di queste affermazioni sono valide per una espressione lambda? / Which among the following statements are correct for a lambda expression?" };
+	final static public String[][] options = { {
+			"Lo sviluppo del software test-driven richiede che il programma sia testato dopo ogni modifica. / Test-driven development demands testing a program after each change",
+			"Una baseline e' un insieme di versioni di configuration item / A baseline is a set of configuration item versions",
+			"Il test black box non considera la struttura interna del codice / Black box testing does not consider internal data structure",
+			"Un design pattern e'una struttura dati per riconoscere sequenze di caratteri / A design pattern is a data structure to recognize character sequences",
+			"L'integrazione continua e' la presa in carico di nuovi requisiti / Continuous integration consists in taking in charge new requirements" 
+			},
+			{ "Contiene i metodi statici / Contains the static methods",
+			"Contiene l'implementazione / Contains the implementation",
+			"Contiene il nome della classe / Contains the name of the class",
+			"Contiene i metodi / Contains the methods",
+			"Contiene le interfacce / Contains the interfaces" },
+			{ "Una lambda restituisce un oggetto / A lambda returns an object",
+			"Una lambda implementa una interfaccia funzionale / A lambda implements a functional interface",
+			"Una lambda pu?? sostituire qualsiasi method reference / A lambda can replace any method reference",
+			"Una lambda implementa sempre una classe astratta / A lambda implements always an abstract class",
+			"Una lambda pu?? implementare un iteratore / A lambda can implement an iterator" } };
+
+	/**
+	 * Return the index of the right answer(s) for the given question
+	 */
+	public static int[] answer(int question) {
+		// TODO: answer the question
+
+		switch (question) {
+		case 0:
+			return new int[] {0,1,2}; // replace with your answers
+		case 1:
+			return new int[] {1}; // replace with your answers
+		case 2:
+			return new int[] {0,1,2}; // replace with your answers
+		}
+		return null; // means: "No answer"
+	}
+
+	/**
+	 * When executed will show the answers you selected
+	 */
+	public static void main(String[] args) {
+		for (int q = 0; q < questions.length; ++q) {
+			System.out.println("Question: " + questions[q]);
+			int[] a = answer(q);
+			if (a == null || a.length == 0) {
+				System.out.println("<undefined>");
+				continue;
+			}
+			System.out.println("Answer" + (a.length > 1 ? "s" : "") + ":");
+			for (int i = 0; i < a.length; ++i) {
+				System.out.println(a[i] + " - " + options[q][a[i]]);
+			}
+		}
+	}
+}
+
+
+--------------------------------------------------------------------------
+
+
